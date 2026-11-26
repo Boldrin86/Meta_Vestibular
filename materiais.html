@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiais didáticos | Meta Vestibular</title>
+    <link rel="stylesheet" href="../styles/site.css">
+    <link rel="stylesheet" href="../styles/materiais.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="../script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="titulo" href="index.html">
+            <div class="header-img">
+                <img src="../assets/metavestibular.png" class="logo-img" alt="Logo Meta Vestibular">
+            </div>
+            <h1>Meta <span class="vestibular-word">Vestibular</span></h1>
+        </a>
+        
+        <div class="header-actions">
+            <button class="header-theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Ativar modo escuro" title="Ativar modo escuro">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            </button>
+            <div class="profile">
+                <a class="profile-interact" href="configuracoes.html" aria-label="Abrir configurações" title="Configurações">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <nav class="nav-menu">
+                <a href="index.html" class="sidebar-interact" id="inicio">
+                    <div class="sidebar-icons"><i class="fa-solid fa-house"></i></div>
+                    <p class="sidebar-text">Início</p>
+                </a>
+                <a href="questoes.html" class="sidebar-interact" id="questoes">
+                    <div class="sidebar-icons"><i class="fa-solid fa-pen"></i></div>
+                    <p class="sidebar-text">Questões</p>
+                </a>
+                <a href="materiais.html" class="sidebar-interact" id="active" aria-current="page">
+                    <div class="sidebar-icons"><i class="fa-solid fa-layer-group"></i></div>
+                    <p class="sidebar-text">Materiais didáticos</p>
+                </a>
+                <a href="livros.html" class="sidebar-interact" id="livros">
+                    <div class="sidebar-icons"><i class="fa-solid fa-book"></i></div>
+                    <p class="sidebar-text">Livros</p>
+                </a>
+                <a href="progresso.html" class="sidebar-interact" id="progresso">
+                    <div class="sidebar-icons"><i class="fa-solid fa-chart-column"></i></div>
+                    <p class="sidebar-text">Meu Progresso</p>
+                </a>
+                <a href="destaques.html" class="sidebar-interact" id="destaques">
+                    <div class="sidebar-icons"><i class="fa-regular fa-star"></i></div>
+                    <p class="sidebar-text">Destaques</p>
+                </a>
+                <a href="configuracoes.html" class="sidebar-interact" id="configuracoes">
+                    <div class="sidebar-icons"><i class="fa-solid fa-gear"></i></div>
+                    <p class="sidebar-text">Configurações</p>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="materials-main">
+            <div class="materials-content">
+                <section class="materials-hero">
+                    <span class="materials-eyebrow"><i class="fa-solid fa-graduation-cap"></i> ROTEIRO DE ESTUDOS</span>
+                    <h1>Aprenda no seu ritmo. <span>Avance com propósito.</span></h1>
+                    <p>Encontre conteúdos gratuitos para revisar as principais matérias do Ensino Médio e se preparar para o ENEM e outros vestibulares.</p>
+                    <a class="materials-hero-link" href="#catalogo-materias">Explorar matérias <i class="fa-solid fa-arrow-down"></i></a>
+                </section>
+
+                <section class="materials-heading" aria-labelledby="materials-title">
+                    <div>
+                        <h2 id="materials-title">Materiais por área do conhecimento</h2>
+                        <p>Escolha uma matéria para acessar um guia de estudo.</p>
+                    </div>
+                    <p class="materials-count" id="materials-count" aria-live="polite">8 matérias</p>
+                </section>
+
+                <section class="materials-grid" id="catalogo-materias" aria-label="Catálogo de materiais">
+                    <article class="material-card" data-search="matemática álgebra geometria estatística números funções" data-favorite-card data-favorite-id="material-matematica" data-favorite-href="materiais.html#catalogo-materias">
+                        <div class="material-icon material-math"><i class="fa-solid fa-square-root-variable"></i></div>
+                        <div class="material-card-body">
+                            <span class="material-area">MATEMÁTICA</span>
+                            <h3>Matemática e suas Tecnologias</h3>
+                            <p>Revise álgebra, geometria, estatística e raciocínio lógico com explicações e exercícios.</p>
+                            <a href="https://www.khanacademy.org/math?lang=pt" target="_blank" rel="noopener noreferrer">Estudar matemática <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </article>
+                    <article class="material-card" data-search="física mecânica eletricidade termodinâmica ondas energia" data-favorite-card data-favorite-id="material-fisica" data-favorite-href="materiais.html#catalogo-materias">
+                        <div class="material-icon material-physics"><i class="fa-solid fa-atom"></i></div>
+                        <div class="material-card-body">
+                            <span class="material-area">CIÊNCIAS DA NATUREZA</span>
+                            <h3>Física</h3>
+                            <p>Entenda movimento, forças, eletricidade, ondas e transformações de energia.</p>
+                            <a href="https://brasilescola.uol.com.br/fisica" target="_blank" rel="noopener noreferrer">Estudar física <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </article>
+                    <article class="material-card" data-search="química matéria tabela periódica ligações reações orgânica" data-favorite-card data-favorite-id="material-quimica" data-favorite-href="materiais.html#catalogo-materias">
+                        <div class="material-icon material-chemistry"><i class="fa-solid fa-flask"></i></div>
+                        <div class="material-card-body">
+                            <span class="material-area">CIÊNCIAS DA NATUREZA</span>
+                            <h3>Química</h3>
+                            <p>Estude matéria, tabela periódica, ligações, reações e química orgânica.</p>
+                            <a href="https://brasilescola.uol.com.br/quimica" target="_blank" rel="noopener noreferrer">Estudar química <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </article>
+                    <article class="material-card" data-search="biologia ecologia genética células evolução saúde" data-favorite-card data-favorite-id="material-biologia" data-favorite-href="materiais.html#catalogo-materias">
+                        <div class="material-icon material-biology"><i class="fa-solid fa-leaf"></i></div>
+                        <div class="material-card-body">
+                            <span class="material-area">CIÊNCIAS DA NATUREZA</span>
+                            <h3>Biologia</h3>
+                            <p>Explore ecologia, genética, citologia, evolução e temas ligados à saúde.</p>
+                            <a href="https://brasilescola.uol.com.br/biologia" target="_blank" rel="noopener noreferrer">Estudar biologia <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </article>
+                    <article class="material-card" data-search="história brasil antiguidade idade média moderna contemporânea" data-favorite-card data-favorite-id="material-historia" data-favorite-href="materiais.html#catalogo-materias">
+                        <div class="material-icon material-history"><i class="fa-solid fa-landmark"></i></div>
+                        <div class="material-card-body">
+                            <span class="material-area">CIÊNCIAS HUMANAS</span>
+                            <h3>História</h3>
+                            <p>Organize períodos históricos e conecte acontecimentos do Brasil e do mundo.</p>
+                            <a href="https://brasilescola.uol.com.br/historia" target="_blank" rel="noopener noreferrer">Estudar história <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </article>
+                    <article class="material-card" data-search="geografia cartografia clima população urbanização geopolítica" data-favorite-card data-favorite-id="material-geografia" data-favorite-href="materiais.html#catalogo-materias">
+                        <div class="material-icon material-geography"><i class="fa-solid fa-earth-americas"></i></div>
+                        <div class="material-card-body">
+                            <span class="material-area">CIÊNCIAS HUMANAS</span>
+                            <h3>Geografia</h3>
+                            <p>Revise cartografia, clima, população, urbanização e questões geopolíticas.</p>
+                            <a href="https://brasilescola.uol.com.br/geografia" target="_blank" rel="noopener noreferrer">Estudar geografia <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </article>
+                    <article class="material-card" data-search="língua portuguesa gramática interpretação texto literatura redação" data-favorite-card data-favorite-id="material-portugues" data-favorite-href="materiais.html#catalogo-materias">
+                        <div class="material-icon material-language"><i class="fa-solid fa-book-open"></i></div>
+                        <div class="material-card-body">
+                            <span class="material-area">LINGUAGENS</span>
+                            <h3>Língua Portuguesa</h3>
+                            <p>Pratique interpretação de texto, gramática, literatura e leitura crítica.</p>
+                            <a href="https://brasilescola.uol.com.br/gramatica" target="_blank" rel="noopener noreferrer">Estudar português <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </article>
+                    <article class="material-card" data-search="filosofia sociologia sociedade cidadania ética política" data-favorite-card data-favorite-id="material-humanidades" data-favorite-href="materiais.html#catalogo-materias">
+                        <div class="material-icon material-society"><i class="fa-solid fa-people-group"></i></div>
+                        <div class="material-card-body">
+                            <span class="material-area">CIÊNCIAS HUMANAS</span>
+                            <h3>Filosofia e Sociologia</h3>
+                            <p>Conheça conceitos, pensadores e temas sociais recorrentes nos vestibulares.</p>
+                            <a href="https://brasilescola.uol.com.br/filosofia" target="_blank" rel="noopener noreferrer">Estudar humanidades <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </article>
+                </section>
+                <p class="materials-empty" id="materials-empty" hidden>Nenhuma matéria encontrada. Tente outro termo.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-desc">
+            <div class="footer-logo">
+                <div class="footer-img">
+                    <img src="../assets/metavestibular.png" class="logo-img" alt="Meta Vestibular">
+                </div>
+                <h2>Meta <span class="vestibular-word" id="footer-span">Vestibular</span></h2>
+            </div>
+    
+            <p>Todas as matérias para ENEM, vestibulares e concursos militares. Centenas de conteúdos organizados para melhorar a sua rotina de estudos!</p>
+        </div>
+    
+    
+        <div class="footer-col">
+            <h3>Editais Oficiais</h3>
+            <a class="footer-a" href="https://s5.static.brasilescola.uol.com.br/enem/2026/05/1-enem-2026-edital.pdf">ENEM 2026 Edital</a>
+            <a class="footer-a" href="https://www.fuvest.br/arquivos/vestibular/fuvest2027-resolucao-DOE.pdf">FUVEST 2027 Edital</a>
+            <a class="footer-a" href="https://www.comvest.unicamp.br/wp-content/uploads/2026/07/VU2027-Manual-do-Ingresso.pdf">Unicamp 2027 Edital</a>
+    
+        </div>
+    
+        <div class="footer-col">
+            <h3>Conteúdos Recomendados</h3>
+            <a href="https://universonarrado.com.br/cursos/licoes-de-fisica" class="footer-a">Física com Universo Narrado (pago)</a>
+            <a href="https://universonarrado.com.br/cursos/licoes-de-matematica" class="footer-a">Matemática com Universo Narrado (pago)</a>
+            <a href="https://seliga.com.br/" class="footer-a">Ciências Humanas com Se Liga (pago)</a>
+            <a href="https://epifaniaexperiencia.com.br/" class="footer-a">Filosofia com Epifania Experiência (grátis)</a>
+            <a href="https://aluno.repertorioenem.com.br/dashboard" class="footer-a">Repertório ENEM - Questões e conteúdos (gratis)</a>
+            <a href="https://brasilescola.uol.com.br/" class="footer-a">Brasil escola (grátis)</a>
+    
+        </div>
+    
+        <div class="footer-col">
+            <h3>Suporte</h3>
+            <a class="footer-a" href="materiais.html#catalogo-materias">Central de materiais</a>
+            <a class="footer-a" href="https://github.com/Kilogabu">Github - Felipe</a>
+            <a class="footer-a" href="https://github.com/Kilogabu">Github - Boldrin</a>
+            <a class="footer-a" href="https://github.com/Kilogabu">Github - Guimarães</a>
+            <a class="footer-a" href="https://github.com/Kilogabu">Github - André</a>
+        </div>
+    
+    </footer>
+</body>
+
+</html>

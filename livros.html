@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros | Meta Vestibular</title>
+    <link rel="stylesheet" href="../styles/site.css">
+    <link rel="stylesheet" href="../styles/livros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="titulo" href="index.html">
+            <div class="header-img"><img src="../assets/metavestibular.png" class="logo-img" alt="Logo Meta Vestibular"></div>
+            <h1>Meta <span class="vestibular-word" id="header-span">Vestibular</span></h1>
+        </a>
+        <div class="header-actions">
+            <button class="header-theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Ativar modo escuro" title="Ativar modo escuro">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            </button>
+            <div class="profile">
+                <a class="profile-interact" href="configuracoes.html" aria-label="Abrir configurações" title="Configurações"><i class="fa-regular fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <nav class="nav-menu">
+                <a href="index.html" class="sidebar-interact" id="inicio">
+                    <div class="sidebar-icons"><i class="fa-solid fa-house"></i></div><p class="sidebar-text">Início</p>
+                </a>
+                <a href="questoes.html" class="sidebar-interact" id="questoes">
+                    <div class="sidebar-icons"><i class="fa-solid fa-pen"></i></div><p class="sidebar-text">Questões</p>
+                </a>
+                <a href="materiais.html" class="sidebar-interact" id="materiais">
+                    <div class="sidebar-icons"><i class="fa-solid fa-layer-group"></i></div><p class="sidebar-text">Materiais didáticos</p>
+                </a>
+                <a href="livros.html" class="sidebar-interact" id="active" aria-current="page">
+                    <div class="sidebar-icons"><i class="fa-solid fa-book"></i></div><p class="sidebar-text">Livros</p>
+                </a>
+                <a href="progresso.html" class="sidebar-interact" id="progresso">
+                    <div class="sidebar-icons"><i class="fa-solid fa-chart-column"></i></div><p class="sidebar-text">Meu Progresso</p>
+                </a>
+                <a href="destaques.html" class="sidebar-interact" id="destaques">
+                    <div class="sidebar-icons"><i class="fa-regular fa-star"></i></div><p class="sidebar-text">Destaques</p>
+                </a>
+                <a href="configuracoes.html" class="sidebar-interact" id="configuracoes">
+                    <div class="sidebar-icons"><i class="fa-solid fa-gear"></i></div><p class="sidebar-text">Configurações</p>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="books-main">
+            <div class="books-content">
+                <section class="books-hero">
+                    <div class="books-hero-copy">
+                        <span class="books-eyebrow"><i class="fa-solid fa-book-open"></i> BIBLIOTECA DIGITAL</span>
+                        <h1>Conhecimento para chegar <span>mais longe.</span></h1>
+                        <p>Encontre livros e materiais de estudo para revisar os conteúdos do Ensino Médio e se preparar para o ENEM e outros vestibulares.</p>
+                        <a href="#catalogo-livros" class="books-hero-button">Explorar biblioteca <i class="fa-solid fa-arrow-down"></i></a>
+                    </div>
+                    <div class="books-hero-art" aria-hidden="true">
+                        <div class="book-art book-art-back"></div>
+                        <div class="book-art book-art-front"><i class="fa-solid fa-book-open"></i><span>SEU PRÓXIMO<br>APRENDIZADO</span></div>
+                        <div class="book-art-spark"><i class="fa-solid fa-star"></i></div>
+                    </div>
+                </section>
+
+                <section class="books-intro">
+                    <div>
+                        <h2>Biblioteca de estudos</h2>
+                        <p>Materiais organizados por área do conhecimento para facilitar sua rotina.</p>
+                    </div>
+                    <span class="books-count" id="books-count"><i class="fa-solid fa-book"></i> <span data-count>4</span> materiais</span>
+                </section>
+
+                <section class="books-filters" aria-label="Filtros de livros">
+                    <button class="book-filter active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+                    <button class="book-filter" type="button" data-filter="natureza" aria-pressed="false">Ciências da Natureza</button>
+                    <button class="book-filter" type="button" data-filter="humanas" aria-pressed="false">Ciências Humanas</button>
+                    <button class="book-filter" type="button" data-filter="linguagens" aria-pressed="false">Linguagens</button>
+                    <button class="book-filter" type="button" data-filter="matematica" aria-pressed="false">Matemática</button>
+                </section>
+
+                <section class="books-grid" id="catalogo-livros" aria-label="Catálogo de livros">
+                    <article class="book-card" data-category="natureza" data-search="ciências da natureza biologia física química encceja" data-favorite-card data-favorite-id="book-natureza" data-favorite-href="livros.html#catalogo-livros">
+                        <div class="book-cover cover-natureza">
+                            <span class="cover-label">ENSINO MÉDIO</span>
+                            <i class="fa-solid fa-flask"></i>
+                            <strong>CIÊNCIAS<br>DA NATUREZA</strong>
+                            <small>Biologia • Física • Química</small>
+                        </div>
+                        <div class="book-card-body">
+                            <span class="book-category">CIÊNCIAS DA NATUREZA</span>
+                            <h3>Ciências da Natureza e suas Tecnologias</h3>
+                            <p>Material do estudante com conteúdos relacionados a Biologia, Física e Química.</p>
+                            <div class="book-card-footer"><span><i class="fa-solid fa-file-pdf"></i> PDF gratuito</span><a href="https://download.inep.gov.br/educacao_basica/encceja/material_estudo/livro_estudante/ciencias_naturais_em_br.pdf" target="_blank" rel="noopener noreferrer">Acessar livro <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-category="humanas" data-search="ciências humanas história geografia filosofia sociologia encceja" data-favorite-card data-favorite-id="book-humanas" data-favorite-href="livros.html#catalogo-livros">
+                        <div class="book-cover cover-humanas">
+                            <span class="cover-label">ENSINO MÉDIO</span>
+                            <i class="fa-solid fa-landmark"></i>
+                            <strong>CIÊNCIAS<br>HUMANAS</strong>
+                            <small>História • Geografia • Filosofia • Sociologia</small>
+                        </div>
+                        <div class="book-card-body">
+                            <span class="book-category">CIÊNCIAS HUMANAS</span>
+                            <h3>Ciências Humanas e suas Tecnologias</h3>
+                            <p>Conteúdos para estudar sociedade, espaço geográfico, história e pensamento crítico.</p>
+                            <div class="book-card-footer"><span><i class="fa-solid fa-file-pdf"></i> PDF gratuito</span><a href="https://download.inep.gov.br/educacao_basica/encceja/material_estudo/livro_estudante/ciencias_humanas_em_br.pdf" target="_blank" rel="noopener noreferrer">Acessar livro <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-category="linguagens" data-search="linguagens códigos língua portuguesa literatura inglês espanhol artes educação física encceja" data-favorite-card data-favorite-id="book-linguagens" data-favorite-href="livros.html#catalogo-livros">
+                        <div class="book-cover cover-linguagens">
+                            <span class="cover-label">ENSINO MÉDIO</span>
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <strong>LINGUAGENS<br>E CÓDIGOS</strong>
+                            <small>Português • Artes • Línguas</small>
+                        </div>
+                        <div class="book-card-body">
+                            <span class="book-category">LINGUAGENS</span>
+                            <h3>Linguagens, Códigos e suas Tecnologias</h3>
+                            <p>Material de apoio para leitura, interpretação, comunicação e diferentes formas de expressão.</p>
+                            <div class="book-card-footer"><span><i class="fa-solid fa-file-pdf"></i> PDF gratuito</span><a href="https://download.inep.gov.br/educacao_basica/encceja/material_estudo/livro_estudante/linguagens_codigos_em_br.pdf" target="_blank" rel="noopener noreferrer">Acessar livro <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-category="matematica" data-search="matemática suas tecnologias números geometria estatística álgebra encceja" data-favorite-card data-favorite-id="book-matematica" data-favorite-href="livros.html#catalogo-livros">
+                        <div class="book-cover cover-matematica">
+                            <span class="cover-label">ENSINO MÉDIO</span>
+                            <i class="fa-solid fa-square-root-variable"></i>
+                            <strong>MATEMÁTICA</strong>
+                            <small>Álgebra • Geometria • Estatística</small>
+                        </div>
+                        <div class="book-card-body">
+                            <span class="book-category">MATEMÁTICA</span>
+                            <h3>Matemática e suas Tecnologias</h3>
+                            <p>Revisão de conceitos matemáticos e situações-problema do cotidiano.</p>
+                            <div class="book-card-footer"><span><i class="fa-solid fa-file-pdf"></i> PDF gratuito</span><a href="https://download.inep.gov.br/educacao_basica/encceja/material_estudo/livro_estudante/encceja_matematica_ens_medio.pdf" target="_blank" rel="noopener noreferrer">Acessar livro <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                        </div>
+                    </article>
+                </section>
+                <p class="books-empty" id="books-empty" hidden>Nenhum livro encontrado. Tente outro termo ou selecione outra matéria.</p>
+
+                <section class="books-notice">
+                    <div class="notice-icon"><i class="fa-solid fa-circle-info"></i></div>
+                    <div>
+                        <h3>Mais livros gratuitos no PNLD Digital</h3>
+                        <p>Estudantes de escolas participantes podem consultar as obras didáticas do Ensino Médio no PNLD Digital. O acesso depende da autenticação Gov.br e do vínculo com a escola.</p>
+                        <a href="https://pnld.fnde.gov.br/" target="_blank" rel="noopener noreferrer">Conhecer o PNLD Digital <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </section>
+                <p class="books-source">Os materiais desta página direcionam para fontes educacionais oficiais. Os livros do estudante listados são disponibilizados pelo Inep na página de materiais de estudo do Encceja.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-desc">
+            <div class="footer-logo">
+                <div class="footer-img"><img src="../assets/metavestibular.png" class="logo-img" alt="Meta Vestibular"></div>
+                <h2>Meta <span class="vestibular-word" id="footer-span">Vestibular</span></h2>
+            </div>
+            <p>Todas as matérias para ENEM, vestibulares e concursos militares. Centenas de conteúdos organizados para melhorar a sua rotina de estudos!</p>
+        </div>
+        <div class="footer-col">
+            <h3>Editais Oficiais</h3>
+            <a class="footer-a" href="https://s5.static.brasilescola.uol.com.br/enem/2026/05/1-enem-2026-edital.pdf">ENEM 2026 Edital</a>
+            <a class="footer-a" href="https://www.fuvest.br/arquivos/vestibular/fuvest2027-resolucao-DOE.pdf">FUVEST 2027 Edital</a>
+            <a class="footer-a" href="https://www.comvest.unicamp.br/wp-content/uploads/2026/07/VU2027-Manual-do-Ingresso.pdf">Unicamp 2027 Edital</a>
+        </div>
+        <div class="footer-col">
+            <h3>Conteúdos Recomendados</h3>
+            <a href="https://universonarrado.com.br/cursos/licoes-de-fisica" class="footer-a">Física com Universo Narrado (pago)</a>
+            <a href="https://universonarrado.com.br/cursos/licoes-de-matematica" class="footer-a">Matemática com Universo Narrado (pago)</a>
+            <a href="https://seliga.com.br/" class="footer-a">Ciências Humanas com Se Liga (pago)</a>
+            <a href="https://epifaniaexperiencia.com.br/" class="footer-a">Filosofia com Epifania Experiência (grátis)</a>
+            <a href="https://aluno.repertorioenem.com.br/dashboard" class="footer-a">Repertório ENEM - Questões e conteúdos (grátis)</a>
+            <a href="https://brasilescola.uol.com.br/" class="footer-a">Brasil Escola (grátis)</a>
+        </div>
+        <div class="footer-col">
+            <h3>Suporte</h3>
+            <a class="footer-a" href="materiais.html#catalogo-materias">Central de materiais</a>
+            <a class="footer-a" href="https://github.com/Kilogabu">Github - Felipe</a>
+            <a class="footer-a" href="https://github.com/Kilogabu">Github - Boldrin</a>
+            <a class="footer-a" href="https://github.com/Kilogabu">Github - Guimarães</a>
+            <a class="footer-a" href="https://github.com/Kilogabu">Github - André</a>
+        </div>
+    </footer>
+
+</body>
+</html>

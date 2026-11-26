@@ -1,0 +1,193 @@
+.questions-content {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.questions-hero { margin-bottom: 30px; }
+.questions-section { scroll-margin-top: 90px; }
+.questions-heading,
+.highlights-heading {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+}
+.questions-heading h2,
+.highlights-heading h2 {
+    color: #1c1445;
+    font-size: clamp(20px, 2.5vw, 25px);
+}
+.questions-heading p,
+.highlights-heading p {
+    margin-top: 3px;
+    color: #667286;
+    font-size: 13px;
+}
+.subject-filters {
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.subject-filter {
+    padding: 8px 13px;
+    border: 1px solid #d5dae5;
+    border-radius: 30px;
+    background: #fff;
+    color: #37475e;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.subject-filter:hover,
+.subject-filter.active {
+    border-color: #1c1445;
+    background: #1c1445;
+    color: #fff;
+}
+.questions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 16px;
+}
+.question-card {
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid #e2e6ee;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 5px 18px #1c14450a;
+}
+.question-card[hidden] { display: none; }
+.question-card-heading {
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+.question-subject {
+    color: #008775;
+    font: 800 9px "JetBrains Mono", monospace;
+    letter-spacing: .1em;
+}
+.question-number {
+    color: #9aa3b1;
+    font: 700 11px "JetBrains Mono", monospace;
+}
+.question-card h3 {
+    margin-bottom: 8px;
+    color: #1c1445;
+    font-size: 17px;
+    line-height: 1.35;
+}
+.question-card[data-category="matematica"] h3 { color: #2859b9; }
+.question-card[data-category="fisica"] h3 { color: #087e75; }
+.question-card[data-category="quimica"] h3 { color: #a93766; }
+.question-card[data-category="biologia"] h3 { color: #397a4c; }
+.question-card[data-category="historia"] h3 { color: #6044a4; }
+.question-card[data-category="geografia"] h3 { color: #067c71; }
+.question-card[data-category="portugues"] h3 { color: #a2385e; }
+.question-card[data-category="filosofia"] h3 { color: #66519a; }
+.question-card[data-category="sociologia"] h3 { color: #8a5a2b; }
+.question-prompt {
+    margin-bottom: 13px;
+    color: #37475e;
+    font-size: 13px;
+}
+.question-form fieldset {
+    min-width: 0;
+    display: grid;
+    gap: 7px;
+    border: 0;
+}
+.question-form legend {
+    margin-bottom: 7px;
+    color: #667286;
+    font-size: 11px;
+    font-weight: 700;
+}
+.question-form fieldset label {
+    padding: 9px 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    border: 1px solid #e2e6ee;
+    border-radius: 8px;
+    color: #37475e;
+    font-size: 12px;
+    line-height: 1.45;
+    cursor: pointer;
+}
+.question-form fieldset label.selected {
+    border-color: #008775;
+    background: #effbf8;
+}
+.question-form input[type="radio"] {
+    margin-top: 3px;
+    flex: 0 0 auto;
+    accent-color: #008775;
+}
+.question-feedback,
+.question-explanation {
+    margin-top: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+.question-feedback[data-result="correct"] {
+    background: #e8f8ef;
+    color: #17613c;
+    font-weight: 800;
+}
+.question-feedback[data-result="incorrect"],
+.question-feedback[data-result="invalid"] {
+    background: #fff0ef;
+    color: #a83333;
+    font-weight: 800;
+}
+.question-explanation {
+    background: #f3f5f9;
+    color: #4a5668;
+}
+.question-actions {
+    margin-top: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.answer-button,
+.retry-button {
+    min-height: 38px;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.answer-button {
+    background: #1c1445;
+    color: #fff;
+}
+.answer-button:hover { background: #2d1d6d; }
+.retry-button {
+    border: 1px solid #d5dae5;
+    background: #fff;
+    color: #37475e;
+}
+.retry-button:hover { border-color: #008775; color: #008775; }
+.questions-empty {
+    padding: 30px 10px;
+    color: #667286;
+    text-align: center;
+}
+@media (max-width: 760px) {
+    .questions-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 560px) {
+    .questions-heading { align-items: flex-start; flex-direction: column; }
+    .question-card { padding: 16px; }
+}

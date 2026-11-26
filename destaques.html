@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destaques | Meta Vestibular</title>
+    <link rel="stylesheet" href="../styles/site.css">
+    <link rel="stylesheet" href="../styles/destaques.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="titulo" href="index.html" aria-label="Meta Vestibular — página inicial">
+            <div class="header-img"><img src="../assets/metavestibular.png" class="logo-img" alt="Logo Meta Vestibular"></div>
+            <h1>Meta <span class="vestibular-word">Vestibular</span></h1>
+        </a>
+        <div class="header-actions">
+            <button class="header-theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Ativar modo escuro" title="Ativar modo escuro">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            </button>
+            <div class="profile"><a class="profile-interact" href="configuracoes.html" aria-label="Abrir configurações" title="Configurações"><i class="fa-regular fa-user"></i></a></div>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <nav class="nav-menu" aria-label="Navegação principal">
+                <a href="index.html" class="sidebar-interact" id="inicio"><div class="sidebar-icons"><i class="fa-solid fa-house"></i></div><p class="sidebar-text">Início</p></a>
+                <a href="questoes.html" class="sidebar-interact" id="questoes"><div class="sidebar-icons"><i class="fa-solid fa-pen"></i></div><p class="sidebar-text">Questões</p></a>
+                <a href="materiais.html" class="sidebar-interact" id="materiais"><div class="sidebar-icons"><i class="fa-solid fa-layer-group"></i></div><p class="sidebar-text">Materiais didáticos</p></a>
+                <a href="livros.html" class="sidebar-interact" id="livros"><div class="sidebar-icons"><i class="fa-solid fa-book"></i></div><p class="sidebar-text">Livros</p></a>
+                <a href="progresso.html" class="sidebar-interact" id="progresso"><div class="sidebar-icons"><i class="fa-solid fa-chart-column"></i></div><p class="sidebar-text">Meu Progresso</p></a>
+                <a href="destaques.html" class="sidebar-interact" id="active" aria-current="page"><div class="sidebar-icons"><i class="fa-regular fa-star"></i></div><p class="sidebar-text">Destaques</p></a>
+                <a href="configuracoes.html" class="sidebar-interact" id="configuracoes"><div class="sidebar-icons"><i class="fa-solid fa-gear"></i></div><p class="sidebar-text">Configurações</p></a>
+            </nav>
+        </aside>
+
+        <main class="highlights-main">
+            <div class="highlights-content">
+                <section class="feature-hero highlights-hero">
+                    <span class="feature-eyebrow"><i class="fa-solid fa-bookmark"></i> SUA LISTA DE ESTUDOS</span>
+                    <h1>Guarde o que <span>vale revisar.</span></h1>
+                    <p>Salve questões, livros e matérias com o botão “Salvar nos destaques”. Sua lista fica disponível neste dispositivo.</p>
+                    <a class="feature-button" href="questoes.html">Explorar questões <i class="fa-solid fa-arrow-right"></i></a>
+                </section>
+                <section class="highlights-section" aria-labelledby="highlights-title">
+                    <div class="highlights-heading">
+                        <div><h2 id="highlights-title">Seus destaques</h2><p id="highlights-count" aria-live="polite">0 itens salvos</p></div>
+                        <a class="text-link" href="materiais.html"><i class="fa-solid fa-layer-group"></i> Explorar materiais</a>
+                    </div>
+                    <div class="highlights-grid" id="highlights-list" aria-live="polite"></div>
+                    <div class="highlights-empty" id="highlights-empty">
+                        <span class="empty-star"><i class="fa-regular fa-star"></i></span>
+                        <h3>Sua lista está vazia</h3>
+                        <p>Use “Salvar nos destaques” em uma questão, livro ou matéria para guardar algo para depois.</p>
+                        <div><a href="questoes.html">Praticar questões</a><a href="livros.html">Ver livros</a><a href="materiais.html">Ver matérias</a></div>
+                    </div>
+                    <p class="highlights-no-results" id="highlights-no-results" hidden>Nenhum destaque corresponde à sua busca.</p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-desc"><div class="footer-logo"><div class="footer-img"><img src="../assets/metavestibular.png" class="logo-img" alt="Meta Vestibular"></div><h2>Meta <span class="vestibular-word">Vestibular</span></h2></div><p>Guarde os conteúdos importantes para encontrar tudo com facilidade.</p></div>
+        <div class="footer-col"><h3>Estudos</h3><a class="footer-a" href="questoes.html">Questões</a><a class="footer-a" href="materiais.html">Materiais didáticos</a><a class="footer-a" href="livros.html">Biblioteca de livros</a></div>
+        <div class="footer-col"><h3>Acompanhe</h3><a class="footer-a" href="progresso.html">Meu Progresso</a><a class="footer-a" href="destaques.html">Destaques salvos</a><a class="footer-a" href="configuracoes.html">Configurações</a></div>
+        <div class="footer-col"><h3>Fontes</h3><a class="footer-a" href="https://www.gov.br/inep/pt-br">Inep</a><a class="footer-a" href="https://brasilescola.uol.com.br/">Brasil Escola</a></div>
+    </footer>
+</body>
+</html>

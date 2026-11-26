@@ -1,0 +1,168 @@
+.progress-content {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.progress-hero { margin-bottom: 22px; }
+.progress-overview {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    gap: 16px;
+}
+.progress-panel,
+.daily-panel {
+    min-width: 0;
+    padding: clamp(18px, 3vw, 26px);
+    border: 1px solid #e2e6ee;
+    border-radius: 12px;
+    background: #fff;
+}
+.task-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+.panel-eyebrow {
+    color: #008775;
+    font: 800 9px "JetBrains Mono", monospace;
+    letter-spacing: .1em;
+}
+.progress-panel h2,
+.daily-panel h2 {
+    margin-top: 4px;
+    color: #1c1445;
+    font-size: 19px;
+}
+.task-panel p,
+.daily-info p {
+    margin-top: 6px;
+    color: #667286;
+    font-size: 12px;
+}
+.progress-ring {
+    --progress: 0%;
+    width: clamp(120px, 18vw, 158px);
+    height: clamp(120px, 18vw, 158px);
+    flex: 0 0 auto;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: conic-gradient(#0ca98b var(--progress), #e6eaf0 0);
+}
+.progress-ring-center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+}
+.progress-ring-center strong {
+    color: #1c1445;
+    font: 800 34px/1 "JetBrains Mono", monospace;
+}
+.progress-ring-center span {
+    margin-top: 5px;
+    color: #667286;
+    font-size: 11px;
+}
+.panel-title,
+.daily-heading,
+.metric-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+.attempt-count {
+    color: #667286;
+    font-size: 11px;
+}
+.metric-row { margin-top: 20px; }
+.metric-label {
+    margin-bottom: 7px;
+    color: #37475e;
+    font-size: 12px;
+    font-weight: 700;
+}
+.metric-label i {
+    margin-right: 5px;
+    color: #0c9d7e;
+}
+.error-track + .metric-note { color: #667286; }
+.error-track ~ .metric-note { color: #667286; }
+.metric-track,
+.daily-track {
+    height: 10px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #e9edf2;
+}
+.metric-track span,
+.daily-track span {
+    width: 0;
+    height: 100%;
+    display: block;
+    border-radius: inherit;
+    background: #0ca98b;
+    transition: width .25s ease;
+}
+.error-track span { background: #e36a71; }
+.metric-note {
+    margin-top: 5px;
+    color: #667286;
+    font-size: 10px;
+}
+.accuracy-footnote {
+    margin-top: 18px;
+    color: #8791a0;
+    font-size: 10px;
+}
+.daily-panel {
+    margin-top: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+.daily-icon {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    background: #d2f5ee;
+    color: #008775;
+}
+.daily-info { min-width: 0; flex: 1; }
+.daily-heading { margin-bottom: 12px; }
+.daily-heading strong {
+    color: #1c1445;
+    font-size: 13px;
+}
+.daily-track { height: 9px; }
+.daily-info p a {
+    color: #008775;
+    font-weight: 700;
+}
+.progress-empty {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 9px;
+    background: #fff;
+    color: #667286;
+    font-size: 12px;
+}
+@media (max-width: 760px) {
+    .progress-overview { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 480px) {
+    .task-panel { align-items: flex-start; flex-direction: column; }
+    .progress-ring { width: 128px; height: 128px; align-self: center; }
+    .daily-panel { padding: 16px; gap: 11px; }
+    .daily-heading { align-items: flex-start; flex-direction: column; }
+}
